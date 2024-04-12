@@ -62,6 +62,7 @@ def visualize_forecast_components(m, forecast, current_price, forecast_days):
 
 def main():
     # Create Streamlit header with CSS styling
+    
     st.markdown("""
        <style>
            .header {
