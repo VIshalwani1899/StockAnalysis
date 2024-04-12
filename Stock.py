@@ -105,7 +105,7 @@ def main():
         #st.write(vishal_link, unsafe_allow_html=True)
     st.write("---")
 
-    st.write("Developed by: **[Sachin Shinkar](https://www.linkedin.com/in/sachinshinkar/)** and **[Vishal Wani](https://www.linkedin.com/in/vishal-wani-b006111b0/)**")
+    st.write("Developed by: **[Sachin Shinkar](https://www.linkedin.com/in/sachinshinkar/)** & **[Vishal Wani](https://www.linkedin.com/in/vishal-wani-b006111b0/)**")
 
 if __name__ == "__main__":
     main()
