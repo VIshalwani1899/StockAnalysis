@@ -61,6 +61,22 @@ def visualize_forecast_components(m, forecast, current_price, forecast_days):
     st.write(f"Date of Forecasted Price: {forecast_date}")
 
 def main():
+    # Create Streamlit header with CSS styling
+    st.markdown("""
+       <style>
+           .header {
+               color: #3498db;  /* Adjust header text color */
+               text-align: center;
+               font-size: 30px;  /* Adjust header font size */
+               padding: 20px;  /* Adjust header padding */
+           }
+       </style>
+       """, unsafe_allow_html=True)
+
+    st.markdown('<h1 class="header">Stock Price Forecast App</h1>', unsafe_allow_html=True)  # Set the title
+
+    # Create Streamlit header (choose a title you prefer)
+    #st.title("Stock Price Forecast App")
     # Create Streamlit text input and selectbox for user interaction
     stock_ticker = st.text_input("Enter stock ticker symbol (e.g., INFY.NS): ")
 
@@ -79,6 +95,16 @@ def main():
 
         except Exception as e:
             st.error(f"Error processing {stock_ticker}: {e}")
+        # Add developer information and LinkedIn links (assuming you have their profiles)
+        #st.write("Developed by:")
+        #sachin_link = "[Sachin Shinkar](https://www.linkedin.com/in/sachinshinkar/)"  # Replace with Sachin's LinkedIn URL
+        #st.write(sachin_link, unsafe_allow_html=True)  # Mark the HTML content as safe
+
+        #vishal_link = "[Vishal Wani](https://www.linkedin.com/in/vishal-wani-b006111b0/)"  # Replace with Vishal's LinkedIn URL
+        #st.write(vishal_link, unsafe_allow_html=True)
+    st.write("---")
+
+    st.write("Developed by: **[Sachin Shinkar](https://www.linkedin.com/in/sachinshinkar/)** and **[Vishal Wani](https://www.linkedin.com/in/vishal-wani-b006111b0/)**")
 
 if __name__ == "__main__":
     main()
